@@ -1,0 +1,56 @@
+.sciwrapper {
+  position: absolute;
+  background-color: white;
+  color: #201500;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  max-height: 9999999px;
+}
+
+.scripturecontent, .scicontent {
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    height: auto;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /*background-color: rgb(236,226,217);*/
+}
+
+.nano > .nano-content {
+    position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.grid {
+  /*border: 2px solid grey;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  width: 75px;
+  margin: 1rem;
+  padding: .5rem;
+  flex: auto;
+}
+
+a:link, a:visited {
+  color: black
+}
+
+.scicontent {
+  display: flex;
+}
