@@ -1,0 +1,22 @@
+#scriptImage {
+  height: 100%;
+  width: 100%;
+}
+
+#titleContent {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  color: white;
+
+}
+
+.referencesblock {
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  #titleContent {
+    top: 3rem;
+  }
+}

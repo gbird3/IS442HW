@@ -1,42 +1,44 @@
 <!doctype html>
 <html>
   <head>
-    <title>Initiate Pipeline Run</title>
+    <title>About</title>
     <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
   <head>
   <body>
-    <div id="centernavbar">
-        <div id="aboutlabel" class="visiblelabel">About</div>
-        <div>
-            <a class="menu dropdown-toggle" data-toggle="dropdown" href="http://scriptures.byu.edu/content/talks_ajax/about/#"></a>
-            <ul class="nav dropdown-menu drop3" role="menu" aria-labelledby="drop2">
-                <li><a href="javascript:void(0);" onclick="getTalk();">
-                    About</a></li>
-            </ul>
-        </div>
+    <nav>
+      <div class="nav-wrapper teal lighten-3">
+        <a href="#!" class="brand-logo center">About</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="#">Test</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="image fullscreen">
+      <img id="scriptImage" class="responsive-img" src="images/scriptures1.jpg">
+    </div>
+    <div id="titleContent">
+      <h3>Scripture Study Guide v3.5.0</h3>
+      <h4>By Stephen W. Liddle and Richard C. Galbraith</h4>
     </div>
     <div id="centercontent">
         <div id="talkcontent">
             <div class="nano">
-            <div id="talkwrapper" class="aboutwrapper nano-content">
-                <div id="aboutcontent">
-                <a name="top"></a><div id="banner"><img id="bannerImg" src="./about_files/Banner-703.png"></div>
-                <div id="btitle"><img id="bannerTitleImg" src="./about_files/CitationIndexTitle.png"></div>
-                <h2 class="about">Version 3.5.0</h2>
-                <h3>By Stephen W. Liddle and Richard C. Galbraith</h3>
-                <!--
-                <center><p align="center"><a href="javascript:void(0)" class="button" onclick="scrollTo('overviewTarget')">Overview</a>
-                    <a href="javascript:void(0)" class="button" onclick="scrollTo('searchTarget')">Search</a>
-                    <a href="javascript:void(0)" class="button" onclick="scrollTo('historyTarget')">History</a></p></center>
-                -->
                 <ul class="collapsible popout" data-collapsible="accordion">
                   <li>
-                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Overview</div>
+                    <div class="collapsible-header"><i class="material-icons">subtitles</i>Overview</div>
                     <div class="collapsible-body">
                       <p>Welcome to the LDS Scripture Citation Index.  This index, found on the right side of your browser window,
                       links from scriptures to the general conference talks, <i>Journal of Discourses</i> speeches, and
@@ -112,10 +114,11 @@
                     </div>
                   </li>
                   <li>
-                    <div class="collapsible-header"><i class="material-icons">place</i>How to Search</div>
+                    <div class="collapsible-header"><i class="material-icons">search</i>How to Search</div>
                     <div class="collapsible-body">
-                      This web site uses the open-source Lucene search engine, so queries use the Lucene
-                      syntax, which is a lot like Google's.  Here are few sample queries you might try:<p></p>
+                      <p>This web site uses the open-source Lucene search engine, so queries use the Lucene
+                      syntax, which is a lot like Google's.  Here are few sample queries you might try:</p>
+
                       <table>
                       <tbody><tr><th>Search Terms</th><th>Finds Documents …</th></tr>
                       <tr><td>angels stand sentinels</td><td>Finds documents containing any combination of these words.</td></tr>
@@ -158,7 +161,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                    <div class="collapsible-header"><i class="material-icons">library_books</i>History</div>
                     <div class="collapsible-body">
                       <p>The LDS Scripture Citation index was first created in paper form by Richard Galbraith
                       while serving as a faculty member at BYU (now emeritus).  The index was made into a web site
@@ -192,7 +195,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="collapsible-header"><i class="material-icons"></i>Other Notes</div>
+                    <div class="collapsible-header"><i class="material-icons">speaker_notes</i>Other Notes</div>
                     <div class="collapsible-body">
                       <p><b>Ensign Issues containing LDS General Conference
                                 (1971-present):</b></p>
@@ -239,6 +242,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         <script type="text/javascript">
           $(document).ready(function(){
+            $(".button-collapse").sideNav();
             $('.collapsible').collapsible();
           });
         </script>
