@@ -16,7 +16,7 @@ body {
   width: 100px;
 }
 
-.nano > .nano-content {
+.sciwrapper > .nano > .nano-content {
     position: absolute;
     overflow: scroll;
     overflow-x: hidden;
@@ -46,4 +46,24 @@ body {
 
 .scicontent {
   display: flex;
+}
+
+.speakerlist > li {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  display: inline-block;
+  width: 80%;
+  margin: .2rem;
+  margin-left: 3rem;
+  padding: .5rem;
+  flex: auto;
+}
+
+.volumetitle {
+  font-weight: bold;
+  margin-left: .1rem;
+}
+
+.volumetitle > a:link, .volumetitle > a:visited {
+  color: black;
 }
