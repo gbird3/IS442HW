@@ -16,23 +16,58 @@ body {
   width: 100px;
 }
 
-.sciwrapper > .nano > .nano-content {
-    position: absolute;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    top: 4.5rem;
-    width: 50%;
-    right: 0;
-    bottom: 0;
-    /*left: 0;*/
+/*
+Content Styles
+*/
+
+section.content {
+			display: flex;
+			flex-direction: row;
 }
+
+section.content > div.left {
+			flex-grow: 1;
+			margin: 10px;
+      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      top: 4.5rem;
+      height: 87%;
+}
+
+section.content > div.right {
+      /*position: absolute;*/
+      flex-grow: 1;
+			margin: 10px;
+      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      top: 4.5rem;
+      height: 87%;
+}
+
+
+/*
+Basic Responsive Styles
+*/
+
+@media (max-width: 650px) {
+			/*
+	Content Responsive Styles
+*/
+
+			section.content {
+						flex-direction: column;
+			}
+}
+
 
 .grid {
   /*border: 2px solid grey;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: rgba(251, 217, 166, 0.53);
+  background-color: white;
   display: inline-block;
   width: 75px;
   margin: 1rem;
@@ -40,12 +75,30 @@ body {
   flex: auto;
 }
 
-.grid > a:link, .grid > a:visited {
-  color: black
+.tabs1 > li {
+  display: inline;
+  margin: .5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: .5rem;
+}
+.volumecontents > li {
+  /*border: 2px solid grey;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  display: inline-block;
+  width: 125px;
+  margin: .5rem;
+  padding: .5rem;
+  flex: auto;
+  text-align: center;
 }
 
-.scicontent {
-  display: flex;
+.volumecontents > li > a:link, .volumecontents > li > a.visited {
+  color: black;
+}
+
+.grid > a:link, .grid > a:visited {
+  color: black
 }
 
 .speakerlist > li {
